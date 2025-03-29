@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: #1e1717;
+    --text-color: #ffffff;
+
+    --font-family: 'Archive', sans-serif;
+    --h1: 800 2rem/1.35 var(--font-family);
+    --h2: 800 1rem/1.4 var(--font-family);
+    --h3: 800 0.875rem/1.4 var(--font-family);
+
+    --border-radius: 20px;
+} 
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-color);
+    font-family: var(--font-family);
+    color: var(--text-color);
+    padding: 20px;
+}
+
+header nav {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    margin: 0 5px;
+    border-radius: var(--border-radius);
+    font-weight: 500;
+    white-space: nowrap
+}
+
+header nav a:hover {
+    background-color: #f0f0f0;
+    color: #cb8dad;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 2rem;
+    background-color: var(--background-color);
+    padding: 2rem;
+    border: 3px solid #574545;
+    border-radius: 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    color: #ffffff;
+}
+
+.profile-picture {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ffffff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    margin-bottom: 1.25rem;
+}
+
+.menu-contato {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.menu-contato a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    transition: all 0.3s ease;
+}
+
+.menu-contato a:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.1);
+}
+
+.menu-contato img {
+    width: auto;
+    height: 60%;
+    object-fit: contain;
+}
+
+
